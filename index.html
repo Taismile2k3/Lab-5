@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h1>My learning</h1>
+    <span>87hr 36min watched | <a href="#" class="view-activity">View all activity</a></span>
+</div>
+
+<div class="content">
+    <div class="tabs">
+        <div class="tab">All courses</div>
+        <div class="tab">Learning paths</div>
+        <div class="tab active" onclick="showSection('certifications')">Certifications</div>
+        <div class="tab" onclick="showSection('archived')">Archived</div>
+        <div class="tab" onclick="showSection('learning-tools')">Learning tools</div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section certifications active" id="certifications">
+        <div class="badges">
+            <div class="header">
+                <h2>My badges</h2>
+                <a href="#" class="import-btn">Import new badge</a>
+            </div>
+            <p>You have earned and uploaded <strong>0 badges</strong></p>
+            <p class="badge-info">Currently, there are no badges uploaded to your profile. Begin your journey towards your certification goals or <a href="#">upload your third-party badges</a> to your profile and impress your manager and peers with your accomplishments. Start preparing for your next certificate today!</p>
+        </div>
+        
+        <div class="certification-preparation">
+            <div class="header">
+                <h2>Certification preparation</h2>
+                <button class="explore-btn">Explore certification preparation</button>
+            </div>
+            <p>You are preparing for <strong>4 certifications</strong></p>
+            <div class="certification-items">
+                <div class="certification-item">
+                    <img src="https://via.placeholder.com/80" alt="Oracle Certification">
+                    <div class="cert-info">
+                        <strong>Oracle Certified Associate, Java SE 8 Programmer</strong>
+                        <p>Oracle</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <img src="https://via.placeholder.com/80" alt="ISTQB Certification">
+                    <div class="cert-info">
+                        <strong>ISTQB® Certified Tester Foundation Level (CTFL)</strong>
+                        <p>Brightest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archived Section -->
+    <div class="section archived" id="archived">
+        <div class="archived-item">
+            <img src="https://via.placeholder.com/320x180" alt="CSR Training" class="archived-img">
+            <div class="archived-info">
+                <h2>FPT_Corporate Social Responsibility Training 2024</h2>
+                <p>FSOFT Content Development</p>
+                <p>100% complete</p>
+                <div class="rating">⭐️⭐️⭐️⭐️ <span>Your rating</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning Tools Section -->
+    <div class="section learning-tools" id="learning-tools">
+        <h2>Learning tools</h2>
+        <p>Explore a diverse range of courses and take advantage of these versatile tools to gain knowledge, skills, and confidence at your own pace.</p>
+        <div class="tool-items">
+            <div class="tool">
+                <div class="tool-icon">⏰</div>
+                <div>
+                    <strong>Learning reminders</strong>
+                    <p>Set time aside to learn and get reminders using your scheduler.</p>
+                    <p>You currently have no ongoing reminders. <a href="#">See more</a></p>
+                </div>
+            </div>
+            <div class="tool">
+                <div class="tool-icon">💡</div>
+                <div>
+                    <strong>Reflections</strong> <span class="beta-badge">Beta</span>
+                    <p>Take time to reflect to strengthen your learning.</p>
+                    <p>You have currently no recorded reflections on your learning journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

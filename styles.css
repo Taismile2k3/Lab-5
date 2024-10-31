@@ -1,0 +1,213 @@
+/* Đặt kiểu chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+
+.navbar h1 {
+    font-size: 3.6rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.view-activity {
+    color: #ccc;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.content {
+    padding: 60px 120px;
+    max-width: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 4rem;
+    margin-top: 35px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    padding: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 5px solid transparent;
+    font-size: 30px;
+}
+
+.tab.active {
+    border-bottom: 5px solid #333;
+    color: #333;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Phần Badge */
+.badges, .certification-preparation, .archived-item, .learning-tools {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badges h2, .certification-preparation h2, .learning-tools h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.import-btn, .explore-btn {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.badge-info {
+    margin-top: 25px;
+    color: #555;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Phần Certifications */
+.certification-preparation h2 {
+    font-size: 2.6rem;
+    margin-bottom: 25px;
+}
+
+.certification-items {
+    display: flex;
+    gap: 40px;
+}
+
+.certification-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 450px;
+}
+
+.certification-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.cert-info strong {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.cert-info p {
+    font-size: 20px;
+    color: #555;
+    margin: 0;
+}
+
+/* Phần Archived */
+.archived-item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.archived-img {
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.archived-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.archived-info p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.rating {
+    color: #ffb400;
+    font-size: 20px;
+}
+
+/* Phần Learning Tools */
+.learning-tools p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.tool-items {
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.tool {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 600px;
+}
+
+.tool-icon {
+    font-size: 42px;
+    color: #333;
+}
+
+.beta-badge {
+    background-color: #ddd;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #666;
+}
